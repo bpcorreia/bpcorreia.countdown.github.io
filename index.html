@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Secs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon_red_black.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>&#x1f557;Countdown secs&#x1f55a;</h1>
+    </header>
+    <section>
+        <div id="dados">
+            Time:
+            <input type="number" name="txthora" id="txthoras"><strong>h</strong> 
+            <input type="number" name="txthora" id="txtminutos"><strong>m</strong> 
+            <!--Comentario em HTML-->
+            <input type="button" value="Calculate Seconds" id="sec" onclick="calcular()">
+        </div>
+        <label id="lbl">Enter the desired time between 0h and 23h</label>
+        <p></p>
+        <div id="res">
+            Calculating Seconds...
+        </div>
+        <div id="res2"></div>
+        <div id="res3"></div>
+    </section>
+    <footer>
+        <p>&copy; BpC</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

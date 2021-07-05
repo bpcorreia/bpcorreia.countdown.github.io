@@ -24,7 +24,7 @@ if (hfinal.length  == 0 || hfinal < 0 || hfinal > 23 ) {
  res3.innerHTML = ' '
  res.innerHTML = `
  Let's calculate the seconds left until the ${hfinal} hours.<br>`
- res.innerHTML += ` It's now ${horaactual}h `
+ res.innerHTML += ` It's now ${horaactual}h${minsactuais}m `
 
  if (hfinal < horaactual) {
     // window.alert(`Hora Final menor que hora actual`)
@@ -32,7 +32,7 @@ if (hfinal.length  == 0 || hfinal < 0 || hfinal > 23 ) {
      let secfalta = (tempofalta*60*60)
      res2.innerHTML += `Deadline: ${hfinal}h / Missing: ${tempofalta}h `
      res3.innerHTML += `Missing <strong> ${secfalta}s </strong>` 
- } else { debugger
+ } else { 
     //window.alert(`Hora Final Maior que hora actual`)
     /*let tempofalta = (hfinal - horaactual)
       let secfalta = (tempofalta*60*60) */

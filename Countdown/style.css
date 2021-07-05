@@ -68,19 +68,54 @@ main > p {
 }
 
 section {
-    background: white;
+    background-color: white;
     border-radius: 10px;
     padding: 20px 20px 20px 20px;
     
     min-width: 400px;
     max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 5px auto 8px auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.747);
     text-align: center;
 
 }
 
+aside {
+    background-color: var(--cor0);
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    
+    min-width: 400px;
+    max-width: auto;
+    margin: 5px auto 8px auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.747);
+    text-align: center;
+
+}
+
+aside > h3 {
+    font-family: var(--font-padrao);
+    font-size: 20px;
+}
+
+aside > p {
+    font-family: var(--font-padrao);
+    font-size: 18px;
+}
+
+div#help {
+    font-family: var(--font-padrao);
+    font-size: 18px;
+    padding: 10px 10px 10px 20px;    
+    min-width: 400px;
+    max-width: auto;
+    margin: 5px auto 8px 10px;
+}
+
+div#help > h3 {
+    font-family: var(--font-padrao);
+    font-size: 20px;
+}
 input {
     font: var(--font-input);
     width: 40px;

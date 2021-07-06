@@ -45,6 +45,7 @@ header {
     text-align: center;
     padding: 20px 0px 20px 0px;
     width: 100%;
+   
 }
 
 main{
@@ -58,7 +59,7 @@ main{
     box-shadow: 2px 2px 2px 0px;
 }
 
-main > h1 {
+main > h1, h2 {
     font-family: var(--font-padrao);
     font-size: 28px;
 }

@@ -23,7 +23,7 @@ if (hfinal.length  == 0 || hfinal < 0 || hfinal > 23 ) {
  res2.innerHTML = ' '
  res3.innerHTML = ' '
  res.innerHTML = `
- Let's calculate the seconds left until the ${hfinal} hours.<br>`
+ Let's calculate the seconds left until ${hfinal}h${mfinal}m.<br>`
  res.innerHTML += ` It's now ${horaactual}h${minsactuais}m `
 
  if (hfinal < horaactual) {

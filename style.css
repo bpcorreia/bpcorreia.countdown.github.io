@@ -1,12 +1,29 @@
-:root {
-    --cor0: #8AD3EE;
-    --cor1: #41BEEB;
-    --cor2: #3394B8;
-    --cor3: #3E5F6B;
-    --cor4: #1E576B;
-    
+@charset "UTF-8";
 
+:root{
+/*
+    --cor0:#9DCEF2;
+    --cor1:#53ACF0;
+    --cor2:#4288BD;
+    --cor3:#495F70;
+    --cor4:#275170;
+*/
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+    --corRes: rgba(152, 251, 152, 0.486);
+
+    --font-padrao: Arial, sans-serif, bold 14pt ;
+    --font-footer: Arial, Verdana, sans-serif;
+    --font-padrao14: Arial, Verdana, sans-serif, bold 14pt ;
+    --font-res: normal 12pt Tahoma;
+    --font-res14: normal 14pt Tahoma;
+    --font-input: normal 12pt Arial;
 }
+
 * {
     margin: 0px;
     padding: 0;
@@ -15,7 +32,7 @@
 
 body {
    /* background-color: var(--cor2);*/
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
     background-attachment: fixed;
     font: normal 15pt Arial;
     
@@ -27,19 +44,118 @@ header {
     color: white;
     text-align: center;
     padding: 20px 0px 20px 0px;
+    width: 100%;
+   
 }
 
-main {
-    background: white;
+main{
+    background-color: #ebd5aef5;
     border-radius: 10px;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     min-width: 400px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.747);
+    max-width: 600px;
+    margin: 5px auto 8px auto;
+    box-shadow: 2px 2px 2px 0px;
 }
+
+main > h1, h2 {
+    font-family: var(--font-padrao);
+    font-size: 28px;
+}
+
+main > p {
+    font-family: var(--font-padrao);
+    font-size: 20px;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    
+    min-width: 400px;
+    max-width: 700px;
+    margin: 5px auto 8px auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.747);
+    text-align: center;
+
+}
+
+aside {
+    background-color: var(--cor0);
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    
+    min-width: 400px;
+    max-width: auto;
+    margin: 5px auto 8px auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.747);
+    text-align: center;
+
+}
+
+aside > h3 {
+    font-family: var(--font-padrao);
+    font-size: 20px;
+}
+
+aside > p {
+    font-family: var(--font-padrao);
+    font-size: 18px;
+}
+
+div#help {
+    font-family: var(--font-padrao);
+    font-size: 18px;
+    padding: 10px 10px 10px 20px;    
+    min-width: 400px;
+    max-width: auto;
+    margin: 5px auto 8px 10px;
+}
+
+div#help > h3 {
+    font-family: var(--font-padrao);
+    font-size: 20px;
+}
+input {
+    font: var(--font-input);
+    width: 40px;
+    height: 20px;
+    text-align: center;
+}
+input#sec { /* botao calcular secs*/
+    width: 150px;
+    height: 30px;
+    
+}
+label#lbl {
+    font:small Tahoma;
+}
+
+
+div#res { /* Comentario em CSS*/
+    font-family: var(--font-res);
+    margin-top: 10px;
+   
+}
+div#res2 { /* Comentario em CSS*/
+    font-family: var(--font-res);
+    margin-top: 10px;
+       
+}
+div#res3 { /* Comentario em CSS*/
+   /* font:normal 14pt Tahoma;*/
+    font-family: var(--font-res14);
+    /*color: white;
+    background-color: black;*/
+    background-color: var(--corRes);
+    margin-top: 10px;
+    
+       
+}
+
+
 footer {
     padding: 5px;
     color: white;

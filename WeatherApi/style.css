@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/*
+* {
+    margin: 0px;
+    padding: 0px;
+}*/
+
+body{
+  /*  background-image: linear-gradient(to right,#5F84A1,#90AFC4 ); */
+  background-image: url(grabowska_pq.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+nav {
+   /* background-color: var(--cor5);*/
+    text-align: left;
+    font-size: 18px;
+    padding: 5px 5px 5px 0px;
+    margin: -8px auto 0px -5px;   
+    }
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 15px;
+    
+}
+nav > a:hover {
+    color: white;
+    background-color: #2fa865b4;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #476277c7 ;
+    width: 625px; 
+    height: 350px; /*270 */
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+.weather-container {
+    background-color: rgba(20, 85, 146, 0.404);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #476277c7 ;
+    width: 520px; /*585*/
+    height: 195px; /*100*/
+    padding: 10px;
+    margin:10px 10px 10px 10px;
+    text-align: center;
+    
+}
+input#txtcidade, input#submit, input#forecast {
+    font-size: 14px;
+    background-color: rgba(128, 128, 128, 0.377) ;
+    border: 0px;
+    height: 30px;
+    width: 190px;
+}
+input#submit, input#forecast {
+    width: 80px;
+    font-weight: bold;
+}
+.location {
+    font-weight: bold;
+    font-size: 18px;
+}
+.icon {
+
+    margin: 2px 2px -18px 2px;
+}
+.temp {
+    color: yellow;
+    font-weight: bold;
+    font-size: 22px;
+  /*  background-color: rgba(255, 255, 0, 0.842);
+    color: black;*/
+    border-radius: 5px;
+    margin: 35px auto;
+}
+.weather, .temp_max, .temp_min {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 41px auto;
+}
+.temp_max, .temp_min {
+    font-weight: normal;
+    border-radius: 5px;
+}
+.temp_max {
+    background-color: red;
+    color: white;
+}
+.temp_min {
+    background-color: blue;
+    color: white;
+}
+
+.feels_like , .wind {
+    color: white;
+    margin: 25px auto;
+    font-weight: bold;
+    font-size: 16px;
+   /* border: 1px solid black;*/
+}
+div {
+    display:inline-block;
+    text-align: center;
+    /*border: 1px solid black;*/
+    height: 100px; /* Altura */
+    width: 80px; 
+}
+div#feels, div#wind {
+    margin: -25px auto;
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+h2 {
+    text-align: center;
+}
+aside > h2 > a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+aside > h2 > a:hover {
+    color: var(--cor5);
+    background-color: #2fa865b4;
+    border-radius: 5px;
+    padding: 4px;
+}

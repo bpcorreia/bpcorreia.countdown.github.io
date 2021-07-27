@@ -1,4 +1,9 @@
 @charset "UTF-8";
+:root{
+    --corContainer: rgba(20, 85, 146, 0.404);
+    --corInput: rgba(128, 128, 128, 0.377);
+    --corLink: ;
+}
 /*
 * {
     margin: 0px;
@@ -17,14 +22,19 @@ nav {
     text-align: left;
     font-size: 18px;
     padding: 5px 5px 5px 0px;
-    margin: -8px auto 0px -5px;   
-    }
+    margin: -8px auto 0px -5px; 
+    border: 1px solid black; 
+    display:inline-block;
+    text-align: center;
+    
+   }
 
 nav > a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     margin-left: 15px;
+    ;
     
 }
 nav > a:hover {
@@ -38,18 +48,24 @@ main{
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 15px #476277c7 ;
-    width: 625px; 
-    height: 350px; /*270 */
+    min-width: 260px; /* 400,600*/
+    max-width: 515px; /*620*/
+
+    /*width: 625px;*/
+    height: 470px; /*350 */
     padding: 10px;
     margin: auto;
     text-align: center;
 }
 .weather-container {
-    background-color: rgba(20, 85, 146, 0.404);
+    background-color: var(--corContainer);
     border-radius: 10px;
     box-shadow: 5px 5px 15px #476277c7 ;
-    width: 520px; /*585*/
-    height: 195px; /*100*/
+    min-width: 225px; /* 400,600*/
+    max-width: 625px;
+
+   /* width: 520px; /*585*/
+    height: 310px; /*195*/
     padding: 10px;
     margin:10px 10px 10px 10px;
     text-align: center;
@@ -57,22 +73,24 @@ main{
 }
 input#txtcidade, input#submit, input#forecast {
     font-size: 14px;
-    background-color: rgba(128, 128, 128, 0.377) ;
+    background-color: var(--corInput) ;
     border: 0px;
     height: 30px;
-    width: 190px;
+    min-width: 80px;
+    max-width: 160px;
 }
 input#submit, input#forecast {
-    width: 80px;
+    /*width: 80px;*/
     font-weight: bold;
 }
 .location {
     font-weight: bold;
     font-size: 18px;
+    margin: 10px 2px 0px 2px;
 }
 .icon {
 
-    margin: 2px 2px -18px 2px;
+    margin: 2px 2px -8px 2px; /*-18*/
 }
 .temp {
     color: yellow;
@@ -81,12 +99,12 @@ input#submit, input#forecast {
   /*  background-color: rgba(255, 255, 0, 0.842);
     color: black;*/
     border-radius: 5px;
-    margin: 35px auto;
+    margin: 10px auto; /*35*/
 }
 .weather, .temp_max, .temp_min {
     font-weight: bold;
     font-size: 16px;
-    margin: 41px auto;
+    margin: 15px auto; /*41*/
 }
 .temp_max, .temp_min {
     font-weight: normal;
@@ -103,7 +121,7 @@ input#submit, input#forecast {
 
 .feels_like , .wind {
     color: white;
-    margin: 25px auto;
+    margin: 11px auto; /*25*/
     font-weight: bold;
     font-size: 16px;
    /* border: 1px solid black;*/
@@ -114,9 +132,11 @@ div {
     /*border: 1px solid black;*/
     height: 100px; /* Altura */
     width: 80px; 
+    margin: -8px 2px -15px 2px;
 }
+
 div#feels, div#wind {
-    margin: -25px auto;
+    margin: 3px auto; /* -25px*/ 
 }
 h1 {
     text-align: center;

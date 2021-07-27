@@ -52,7 +52,7 @@ main{
     max-width: 515px; /*620*/
 
     /*width: 625px;*/
-    height: 470px; /*350 */
+    height: 445px; /*350 445*/
     padding: 10px;
     margin: auto;
     text-align: center;
@@ -65,7 +65,7 @@ main{
     max-width: 625px;
 
    /* width: 520px; /*585*/
-    height: 310px; /*195*/
+    height: 300px; /*195 300*/
     padding: 10px;
     margin:10px 10px 10px 10px;
     text-align: center;
@@ -144,6 +144,7 @@ h1 {
 }
 h2 {
     text-align: center;
+    margin: 10px 10px 10px 10px;
 }
 aside > h2 > a {
     font-size: 20px;

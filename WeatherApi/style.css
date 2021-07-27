@@ -11,10 +11,10 @@
 }*/
 
 body{
-  /*  background-image: linear-gradient(to right,#5F84A1,#90AFC4 ); */
-  background-image: url(grabowska_pq.jpg);
+  background-image: linear-gradient(to bottom,#487ea7,#90AFC4 );
+ /* background-image: url(grabowska_pq.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   
 }
 nav {

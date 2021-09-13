@@ -32,7 +32,7 @@
 
 body {
    /* background-color: var(--cor2);*/
-    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
     background-attachment: fixed;
     font: normal 15pt Arial;
     
@@ -40,7 +40,8 @@ body {
 
 header {
 
-    background-image: linear-gradient(to bottom, var(--cor2),var(--cor4));
+   /* background-image: linear-gradient(to bottom, var(--cor2),var(--cor4));*/
+    background-color: var(--cor3);
     color: white;
     text-align: center;
     padding: 20px 0px 20px 0px;
@@ -52,7 +53,7 @@ header {
    }
 
 nav {
-    background-color: var(--cor5);
+    background-color: var(--cor4);
     text-align: left;
     padding: 5px 5px 5px 18px;
     margin: -8px auto 0px auto;   
